@@ -1,0 +1,285 @@
+From noreply at berlios.de  Sat Nov 13 04:25:17 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 13 Nov 2004 16:25:17 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2614] !part Parts the wrong channel
+Message-ID: <200411130325.iAD3PHKD026454@unicorn.berlios.de>
+
+Bug #2614, was updated on 2004-Oct-10 01:51
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 7
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: !part Parts the wrong channel
+
+Details: Somewhere in Pankey's code there is something that causes the bot to part the wrong channel.  Obviously this needs to be fixed, and shall be during my Channel Handling overhaul.
+
+Follow-Ups:
+
+Date: 2004-Nov-13 16:25
+By: nigelj
+
+Comment:
+God i forgot about bugs!  Time to fix it!
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2614&group_id=2320
+
+
+From noreply at berlios.de  Sat Nov 13 09:25:47 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 13 Nov 2004 21:25:47 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2614] !part Parts the wrong channel
+Message-ID: <200411130825.iAD8Pljn028964@unicorn.berlios.de>
+
+Bug #2614, was updated on 2004-Oct-10 01:51
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Closed
+Resolution: Fixed
+Bug Group: None
+Priority: 7
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: !part Parts the wrong channel
+
+Details: Somewhere in Pankey's code there is something that causes the bot to part the wrong channel.  Obviously this needs to be fixed, and shall be during my Channel Handling overhaul.
+
+Follow-Ups:
+
+Date: 2004-Nov-13 21:25
+By: nigelj
+
+Comment:
+The bug has being fixed in the source, and will be uploaded when
+I next commit to CVS.
+
+Thank you for bringing this bug to our attention and we hope it
+is now fully fixed.
+
+If the bug occurs again please submit a new bug refering to this
+bug and details of the problems at the new stage.
+-------------------------------------------------------
+
+Date: 2004-Nov-13 16:25
+By: nigelj
+
+Comment:
+God i forgot about bugs!  Time to fix it!
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2614&group_id=2320
+
+
+From noreply at berlios.de  Sat Nov 13 10:20:07 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 13 Nov 2004 22:20:07 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2772] KeyboardInterrupt Not Handled
+Message-ID: <200411130920.iAD9K7SP000669@unicorn.berlios.de>
+
+Bug #2772, was updated on 2004-Nov-13 22:20
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 2
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: KeyboardInterrupt Not Handled
+
+Details: This should be pretty easy, just i need to retab just about every line so it's not a job to do at the present time.  Yet it is still a bug because the bot closes down heavily.
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2772&group_id=2320
+
+
+From noreply at berlios.de  Sat Nov 13 22:32:26 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 14 Nov 2004 10:32:26 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2780] channels.list will have more that one channel entry at times
+Message-ID: <200411132132.iADLWQWk028432@unicorn.berlios.de>
+
+Bug #2780, was updated on 2004-Nov-14 10:32
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 7
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: channels.list will have more that one channel entry at times
+
+Details: 10:26 <@Nigel> !join #nigel
+10:27 <@Nigel> !list
+10:27 <@IRCBP> I am in: #IRCBP
+10:27 <@IRCBP> I am in: #nigel
+10:27 <@Nigel> !part #nigel
+10:27 <@Nigel> !list
+10:27 <@IRCBP> I am in: #IRCBP
+10:27 <@Nigel> !part #nigel
+10:27 <@Nigel> !list
+10:27 <@IRCBP> I am in: #IRCBP
+10:28 <@Nigel> !join #IRCBP
+10:28 <@Nigel> !list
+10:28 <@IRCBP> I am in: #IRCBP
+10:28 <@IRCBP> I am in: #IRCBP
+10:28 <@Nigel> !join #nigel
+10:28 <@Nigel> !part #ircbp
+
+Basicly the problem you can see is that you can !join a channel the bot is already in and !part a channel that the bot is already in.
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2780&group_id=2320
+
+
+From noreply at berlios.de  Sat Nov 13 22:43:39 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 14 Nov 2004 10:43:39 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2781] Bot doesn't phase RAW messages
+Message-ID: <200411132143.iADLhdon028850@unicorn.berlios.de>
+
+Bug #2781, was updated on 2004-Nov-14 10:43
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 8
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: Bot doesn't phase RAW messages
+
+Details: By phasing RAW numerics we would be able to work out if we can actually join a channel and what our situation of the channel is.  An example is:  if the bot has only 1 channel defined and it tries to join it but is banned (or channel is invite only) it will fail, but the bot will be stuck in the console and on the server.  This means you have to Ctrl+C (or kill) that process.
+
+Phasing of the raw numerics would help.
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2781&group_id=2320
+
+
+From noreply at berlios.de  Sun Nov 14 00:13:23 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 14 Nov 2004 12:13:23 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2782] Bot doesn't follow Dancer Forwarding
+Message-ID: <200411132313.iADNDNHM002738@unicorn.berlios.de>
+
+Bug #2782, was updated on 2004-Nov-14 12:13
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 6
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: Bot doesn't follow Dancer Forwarding
+
+Details: Bot doesn't following Dancer Forwarding of users
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2782&group_id=2320
+
+
+From noreply at berlios.de  Sun Nov 14 00:32:09 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 14 Nov 2004 12:32:09 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2782] Bot doesn't follow Dancer Forwarding
+Message-ID: <200411132332.iADNW9Uo004675@unicorn.berlios.de>
+
+Bug #2782, was updated on 2004-Nov-14 12:13
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Closed
+Resolution: Fixed
+Bug Group: None
+Priority: 6
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: Bot doesn't follow Dancer Forwarding
+
+Details: Bot doesn't following Dancer Forwarding of users
+
+Follow-Ups:
+
+Date: 2004-Nov-14 12:32
+By: nigelj
+
+Comment:
+The bug has being fixed in the source, and will be uploaded when
+I next commit to CVS.
+
+Thank you for bringing this bug to our attention and we hope it
+is now fully fixed.
+
+If the bug occurs again please submit a new bug refering to this
+bug and details of the problems at the new stage.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2782&group_id=2320
+
+
+From noreply at berlios.de  Sun Nov 14 02:46:14 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 14 Nov 2004 14:46:14 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2781] Bot doesn't phase RAW messages
+Message-ID: <200411140146.iAE1kEpb022317@unicorn.berlios.de>
+
+Bug #2781, was updated on 2004-Nov-14 10:43
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Closed
+Resolution: Fixed
+Bug Group: None
+Priority: 8
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: Bot doesn't phase RAW messages
+
+Details: By phasing RAW numerics we would be able to work out if we can actually join a channel and what our situation of the channel is.  An example is:  if the bot has only 1 channel defined and it tries to join it but is banned (or channel is invite only) it will fail, but the bot will be stuck in the console and on the server.  This means you have to Ctrl+C (or kill) that process.
+
+Phasing of the raw numerics would help.
+
+Follow-Ups:
+
+Date: 2004-Nov-14 14:46
+By: nigelj
+
+Comment:
+The bug has being fixed in the source, and will be uploaded when
+I next commit to CVS.
+
+Thank you for bringing this bug to our attention and we hope it
+is now fully fixed.
+
+If the bug occurs again please submit a new bug refering to this
+bug and details of the problems at the new stage.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2781&group_id=2320
+
+

@@ -1,0 +1,30 @@
+From admin at berlios.de  Sat Mar 25 09:33:22 2006
+From: admin at berlios.de (admin at berlios.de)
+Date: Sat, 25 Mar 2006 00:33:22 -0800 (PST)
+Subject: [ircbp-devel] [Feature #2039] text configuration file
+Message-ID: <200603250833.k2P8XMCB009941@unicorn.berlios.de>
+
+Feature Request #2039, was updated on 2006-Mar-25 00:33
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=2039&group_id=2320
+
+Category: 0.2.0 - Zilda
+Status: Open
+Priority: 5
+Summary: text configuration file
+
+By: tensordyne
+Date: 2006-Mar-25 00:33
+
+Message:
+Logged In: YES 
+user_id=26609
+Browser: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.8) Gecko/20050524 Fedora/1.0.4-4 Firefox/1.0.4
+
+Text based configuration file. Something simple.
+
+----------------------------------------------------------------------
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=2039&group_id=2320
+
+

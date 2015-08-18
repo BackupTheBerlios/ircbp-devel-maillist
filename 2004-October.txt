@@ -1,0 +1,104 @@
+From noreply at berlios.de  Sat Oct  9 14:10:09 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 9 Oct 2004 04:10:09 -0800 (AKDT)
+Subject: [ircbp-devel] [Bug #2613] Invalid IRC Parameters
+Message-ID: <200410091210.i99CA907026858@unicorn.berlios.de>
+
+Bug #2613, was updated on 2004-Oct-09 04:10
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 5
+Submitted by: kyleb
+Assigned to : none
+Summary: Invalid IRC Parameters
+
+Details: dojoins called
+Starting the loop
+The loop is going to join the channel in channels[0] which is #IRCBP
+dojoins Complete!
+NOTICE AUTH :*** Looking up your hostname...
+NOTICE AUTH :*** Found your hostname, welcome back
+NOTICE AUTH :*** Checking ident
+NOTICE AUTH :*** No identd (auth) response
+:niven.freenode.net 461 * USER :Not enough parameters
+:niven.freenode.net 451 kylebot JOIN :Register first.
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2613&group_id=2320
+
+
+From noreply at berlios.de  Sat Oct  9 14:47:59 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 10 Oct 2004 01:47:59 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2613] Invalid IRC Parameters
+Message-ID: <200410091247.i99ClxiC028519@unicorn.berlios.de>
+
+Bug #2613, was updated on 2004-Oct-10 01:10
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Closed
+Resolution: Fixed
+Bug Group: None
+Priority: 5
+Submitted by: kyleb
+Assigned to : nigelj
+Summary: Invalid IRC Parameters
+
+Details: dojoins called
+Starting the loop
+The loop is going to join the channel in channels[0] which is #IRCBP
+dojoins Complete!
+NOTICE AUTH :*** Looking up your hostname...
+NOTICE AUTH :*** Found your hostname, welcome back
+NOTICE AUTH :*** Checking ident
+NOTICE AUTH :*** No identd (auth) response
+:niven.freenode.net 461 * USER :Not enough parameters
+:niven.freenode.net 451 kylebot JOIN :Register first.
+
+Follow-Ups:
+
+Date: 2004-Oct-10 01:47
+By: nigelj
+
+Comment:
+Something I overlooked during release, I will do a 0.1.1 release tomorrow because of this (most likely).
+
+For now just set REALNAME to something other than null
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2613&group_id=2320
+
+
+From noreply at berlios.de  Sat Oct  9 14:51:02 2004
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 10 Oct 2004 01:51:02 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2614] !part Parts the wrong channel
+Message-ID: <200410091251.i99Cp2Af028617@unicorn.berlios.de>
+
+Bug #2614, was updated on 2004-Oct-10 01:51
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 7
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: !part Parts the wrong channel
+
+Details: Somewhere in Pankey's code there is something that causes the bot to part the wrong channel.  Obviously this needs to be fixed, and shall be during my Channel Handling overhaul.
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2614&group_id=2320
+
+

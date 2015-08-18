@@ -1,0 +1,36 @@
+From noreply at berlios.de  Sun Aug 21 06:35:44 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 21 Aug 2005 16:35:44 +1200 (NZST)
+Subject: [ircbp-devel] [Bug #2772] KeyboardInterrupt Not Handled
+Message-ID: <200508210435.j7L4ZiQW021261@unicorn.berlios.de>
+
+Bug #2772, was updated on 2004-Nov-13 22:20
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Open
+Resolution: None
+Bug Group: None
+Priority: 2
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: KeyboardInterrupt Not Handled
+
+Details: This should be pretty easy, just i need to retab just about every line so it's not a job to do at the present time.  Yet it is still a bug because the bot closes down heavily.
+
+Follow-Ups:
+
+Date: 2005-May-21 17:31
+By: nigelj
+
+Comment:
+Re: https://developer.berlios.de/forum/forum.php?forum_id=9488
+
+This bug is no longer valid and should be resubmitted as a Wishlist/Todo item when details for 0.2.x are released.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2772&group_id=2320
+
+

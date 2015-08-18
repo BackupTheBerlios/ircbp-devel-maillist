@@ -1,0 +1,58 @@
+From noreply at berlios.de  Sat Jan 15 23:06:18 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sun, 16 Jan 2005 11:06:18 +1300 (NZDT)
+Subject: [ircbp-devel] [Bug #2780] channels.list will have more that one channel entry at times
+Message-ID: <200501152206.j0FM6IEc002908@unicorn.berlios.de>
+
+Bug #2780, was updated on 2004-Nov-14 10:32
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Closed
+Resolution: Fixed
+Bug Group: None
+Priority: 7
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: channels.list will have more that one channel entry at times
+
+Details: 10:26 <@Nigel> !join #nigel
+10:27 <@Nigel> !list
+10:27 <@IRCBP> I am in: #IRCBP
+10:27 <@IRCBP> I am in: #nigel
+10:27 <@Nigel> !part #nigel
+10:27 <@Nigel> !list
+10:27 <@IRCBP> I am in: #IRCBP
+10:27 <@Nigel> !part #nigel
+10:27 <@Nigel> !list
+10:27 <@IRCBP> I am in: #IRCBP
+10:28 <@Nigel> !join #IRCBP
+10:28 <@Nigel> !list
+10:28 <@IRCBP> I am in: #IRCBP
+10:28 <@IRCBP> I am in: #IRCBP
+10:28 <@Nigel> !join #nigel
+10:28 <@Nigel> !part #ircbp
+
+Basicly the problem you can see is that you can !join a channel the bot is already in and !part a channel that the bot is already in.
+
+Follow-Ups:
+
+Date: 2005-Jan-16 11:06
+By: nigelj
+
+Comment:
+The bug has being fixed in the source, and will be uploaded when
+I next commit to CVS.
+
+Thank you for bringing this bug to our attention and we hope it
+is now fully fixed.
+
+If the bug occurs again please submit a new bug refering to this
+bug and details of the problems at the new stage.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2780&group_id=2320
+
+

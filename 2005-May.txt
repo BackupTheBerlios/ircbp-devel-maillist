@@ -1,0 +1,184 @@
+From noreply at berlios.de  Sat May 21 07:31:12 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 21 May 2005 17:31:12 +1200 (NZST)
+Subject: [ircbp-devel] [Bug #2772] KeyboardInterrupt Not Handled
+Message-ID: <200505210531.j4L5VC9r020881@unicorn.berlios.de>
+
+Bug #2772, was updated on 2004-Nov-13 22:20
+Here is a current snapshot of the bug.
+
+Project: The IRC Bot Project
+Category: Framework
+Status: Closed
+Resolution: Invalid
+Bug Group: None
+Priority: 2
+Submitted by: nigelj
+Assigned to : nigelj
+Summary: KeyboardInterrupt Not Handled
+
+Details: This should be pretty easy, just i need to retab just about every line so it's not a job to do at the present time.  Yet it is still a bug because the bot closes down heavily.
+
+Follow-Ups:
+
+Date: 2005-May-21 17:31
+By: nigelj
+
+Comment:
+Re: https://developer.berlios.de/forum/forum.php?forum_id=9488
+
+This bug is no longer valid and should be resubmitted as a Wishlist/Todo item when details for 0.2.x are released.
+-------------------------------------------------------
+
+For detailed info, follow this link:
+http://developer.berlios.de/bugs/?func=detailbug&bug_id=2772&group_id=2320
+
+
+From noreply at berlios.de  Sat May 21 12:10:08 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 21 May 2005 22:10:08 +1200 (NZST)
+Subject: [ircbp-devel] [Feature #999] Fully Modular Interface
+Message-ID: <200505211010.j4LAA8G7028356@unicorn.berlios.de>
+
+Feature Request #999, was updated on 2005-May-21 22:10
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=999&group_id=2320
+
+Category: 0.2.0 - Zilda
+Status: Open
+Priority: 5
+Summary: Fully Modular Interface
+
+By: nigelj
+Date: 2005-May-21 22:10
+
+Message:
+Logged In: YES 
+user_id=11053
+Browser: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.5) Gecko/20041111 Firefox/1.0 (Debian package 1.0-2)
+
+IRCBP needs a fully modular interface.
+
+The main reasons are:
+ * Ability for bot owner/admins, to stop abuse of
+commands, by unloading command modules.
+* To make the main bot file to be much smaller.
+* Ability to use a proper structure, the old bot was
+made in a way that all files where in the same dir, if
+we want to package/maintain the bot to linux
+distributions and hence increase viability in the
+"market", then we need to follow generally accepted
+python rules, (i.e use of "site-packages".
+* Decrease memory load - unneeded commands are not
+loaded hence meaning the fact that they do not take up
+memory.
+
+----------------------------------------------------------------------
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=999&group_id=2320
+
+
+From noreply at berlios.de  Sat May 21 12:14:26 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 21 May 2005 22:14:26 +1200 (NZST)
+Subject: [ircbp-devel] [Feature #1000] SQLite/Other DB Type
+Message-ID: <200505211014.j4LAEQU0028466@unicorn.berlios.de>
+
+Feature Request #1000, was updated on 2005-May-21 22:14
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=1000&group_id=2320
+
+Category: 0.2.0 - Zilda
+Status: Open
+Priority: 5
+Summary: SQLite/Other DB Type
+
+By: nigelj
+Date: 2005-May-21 22:14
+
+Message:
+Logged In: YES 
+user_id=11053
+Browser: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.5) Gecko/20041111 Firefox/1.0 (Debian package 1.0-2)
+
+Instead of requiring mySQL, I think we should stick
+with maybe SQLite DBs (i've rubbished them in the past,
+but other projects use them well).
+
+Advantages:
+ * No need for mySQL
+ * Less overhead for queries, and the ability to
+liberally do queries without too much overhead.
+* Less pain in programming
+* Better multiple platform support (i believe)
+
+Of course, this relies on developer's knowledge, and
+possibly should be discussed on ircbp-devel.
+
+----------------------------------------------------------------------
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=1000&group_id=2320
+
+
+From noreply at berlios.de  Sat May 21 12:27:21 2005
+From: noreply at berlios.de (noreply at berlios.de)
+Date: Sat, 21 May 2005 22:27:21 +1200 (NZST)
+Subject: [ircbp-devel] [Feature #1000] SQLite/Other DB Type
+Message-ID: <200505211027.j4LARLBN028827@unicorn.berlios.de>
+
+Feature Request #1000, was updated on 2005-May-21 22:14
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=1000&group_id=2320
+
+Category: 0.2.0 - Zilda
+Status: Open
+Priority: 7
+Summary: SQLite/Other DB Type
+
+By: nigelj
+Date: 2005-May-21 22:27
+
+Message:
+Logged In: YES 
+user_id=11053
+Browser: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.5) Gecko/20041111 Firefox/1.0 (Debian package 1.0-2)
+
+The feature request can be expected to be added to the suggested
+version.
+
+This feature has been assigned to me, and has been given new
+priority (if needed).
+
+Thank You,
+
+IRCbp Feature Request Managers
+
+----------------------------------------------------------------------
+
+By: nigelj
+Date: 2005-May-21 22:14
+
+Message:
+Logged In: YES 
+user_id=11053
+Browser: Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.7.5) Gecko/20041111 Firefox/1.0 (Debian package 1.0-2)
+
+Instead of requiring mySQL, I think we should stick
+with maybe SQLite DBs (i've rubbished them in the past,
+but other projects use them well).
+
+Advantages:
+ * No need for mySQL
+ * Less overhead for queries, and the ability to
+liberally do queries without too much overhead.
+* Less pain in programming
+* Better multiple platform support (i believe)
+
+Of course, this relies on developer's knowledge, and
+possibly should be discussed on ircbp-devel.
+
+----------------------------------------------------------------------
+You can respond by visiting: 
+http://developer.berlios.de/feature/?func=detailfeature&feature_id=1000&group_id=2320
+
+
